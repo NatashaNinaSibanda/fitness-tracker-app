@@ -8,6 +8,7 @@ function Navbar() {
         <a href="#" className="hover:underline">Home</a>
         <a href="#" className="hover:underline">Workouts</a>
         <a href="#" className="hover:underline">Progress</a>
+        <a href="#" className="hover:underline">About Us</a>
         <a href="#" className="hover:underline">Login</a>
       </div>
     </nav>
