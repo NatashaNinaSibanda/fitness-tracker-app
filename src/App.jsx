@@ -1,7 +1,16 @@
+import React from 'react';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import LandingPage from './pages/LandingPage';
+
 function App() {
   return (
-    <div className="min-h-screen bg-green-100 flex items-center justify-center">
-      <h1 className="text-3xl font-bold text-green-700">Hello Tailwind!</h1>
+    <div className="min-h-screen bg-lightGray text-darkText">
+      <Navbar />
+      <main className="p-4">
+        <LandingPage />
+      </main>
+      <Footer />
     </div>
   );
 }
