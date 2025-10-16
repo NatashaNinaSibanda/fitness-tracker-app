@@ -1,22 +1,34 @@
 import React from "react";
+import heroBg from "../assets/Hero-bg.jpg";
 
-const LandingPage = () => {
+function LandingPage() {
   return (
-    <section className="flex flex-col items-center justify-center min-h-screen bg-gray-100 text-center">
-      <h1 className="text-5xl font-bold text-blue-600 mb-4">Welcome to GoGetFit</h1>
-      <p className="text-lg text-gray-700 mb-8">
-        Track your workouts, monitor progress, take up challenges, and achieve your fitness goals!
-      </p>
-      <div className="flex gap-4">
-        <button className="bg-pink-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition">
-          Sign Up
+    <div
+      className="relative bg-cover bg-center h-screen flex flex-col justify-center text-white"
+      style={{
+        backgroundImage: `url(${heroBg})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        filter: "brightness(1.0)",
+      }}
+    >
+      <div className="absolute inset-0 bg-white/90"></div>
+
+      <main className="relative z-10 text-center px-8">
+        <h2 className="text-10xl sm:text-10xl font-bold mb-4">
+          Your Fitness Journey Starts Here
+        </h2>
+        <p className="text-lg sm:text-xl mb-10 max-w-2xl mx-auto">
+          Track your workouts, monitor progress, take up challenges and reach your
+          goals with GoGetFit.
+        </p>
+        <button className="px-8 py-3 bg-green-500 text-white font-semibold rounded-lg hover:bg-green-600 transition">
+          Get Started
         </button>
-        <button className="bg-gray-200 text-gray-800 px-6 py-2 rounded-lg hover:bg-gray-300 transition">
-          Log In
-        </button>
-      </div>
-    </section>
+      </main>
+    </div>
   );
-};
+}
 
 export default LandingPage;
