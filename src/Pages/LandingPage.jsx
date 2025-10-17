@@ -13,7 +13,7 @@ function LandingPage() {
         filter: "brightness(1.0)",
       }}
     >
-      <div className="absolute inset-0 bg-white/90"></div>
+      <div className="position:absolute inset-0 bg-white/90"></div>
 
       <main className="relative z-10 text-center px-8">
         <h2 className="text-10xl sm:text-10xl font-bold mb-4">
@@ -22,6 +22,9 @@ function LandingPage() {
         <p className="text-lg sm:text-xl mb-10 max-w-2xl mx-auto">
           Track your workouts, monitor progress, take up challenges and reach your
           goals with GoGetFit.
+          Make Every Workout Count.
+          Fitness Tracking Made Effortless.
+          From Goals to Gains, We’ve Got You Covered
         </p>
         <button className="px-8 py-3 bg-green-500 text-white font-semibold rounded-lg hover:bg-green-600 transition">
           Get Started

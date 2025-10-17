@@ -1,7 +1,7 @@
-import React from 'react';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import LandingPage from './pages/LandingPage';
+import LandingPage from './Pages/LandingPage';
+import AboutUs from "./pages/AboutUs"; 
 
 function App() {
   return (
@@ -9,6 +9,7 @@ function App() {
       <Navbar />
       <main className="p-4">
         <LandingPage />
+        <AboutUs />
       </main>
       <Footer />
     </div>
