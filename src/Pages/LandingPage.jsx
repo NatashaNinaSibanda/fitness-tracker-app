@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom"; 
 import heroBg from "../assets/Hero-bg.jpg";
 
 function LandingPage() {
@@ -26,9 +27,12 @@ function LandingPage() {
           Fitness Tracking Made Effortless.
           From Goals to Gains, We’ve Got You Covered
         </p>
-        <button className="px-8 py-3 bg-green-500 text-white font-semibold rounded-lg hover:bg-green-600 transition">
-          Get Started
-        </button>
+        <Link
+         to="/signup"
+         className="px-6 py-3 bg-green-500 text-white font-semibold rounded-lg hover:bg-green-600 transition"
+ > 
+         Get Started
+        </Link>
       </main>
     </div>
   );

@@ -1,6 +1,6 @@
 import React from "react"; 
 import Team from "../assets/Team.webp";
-import AboutUs from "../ssets/AboutUs.jpg";
+import AboutImage from "../assets/AboutUs.jpg";
 
 function AboutUs() {
     return (

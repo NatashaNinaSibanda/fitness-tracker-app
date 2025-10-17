@@ -1,18 +1,25 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from './components/Navbar';
-import Footer from './components/Footer';
 import LandingPage from './Pages/LandingPage';
-import AboutUs from "./pages/AboutUs"; 
+import AboutUs from "./Pages/AboutUs"; 
+import SignUpPage from './Pages/SignUpPage';
+import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="min-h-screen bg-lightGray text-darkText">
-      <Navbar />
-      <main className="p-4">
-        <LandingPage />
-        <AboutUs />
-      </main>
-      <Footer />
-    </div>
+    <Router>
+      <div className="min-h-screen bg-lightGray text-darkText flex flex-col">
+        <Navbar />
+        <main className="flex-grow">
+          <Routes>
+            <Route path="/" element={<LandingPage />} />
+            <Route path="/about" element={<AboutUs />} />
+            <Route path="/signup" element={<SignUpPage />} /> 
+          </Routes>
+        </main>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
