@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom"; 
-import Background from "../assets/Background.jpg";
+import AboutLogIn from "../assets/AboutLogIn.jpg";
 
 function LandingPage() {
   return (
@@ -8,11 +8,11 @@ function LandingPage() {
       <div
         className="relative bg-cover bg-center h-screen flex flex-col justify-center text-white"
         style={{
-          backgroundImage: `url(${Background})`,
+          backgroundImage: `url(${AboutLogIn})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
-          filter: "brightness(0.7)",
+          filter: "brightness(1.0)",
         }}
       >
         <div className="absolute inset-0 bg-white/90"></div>
@@ -21,12 +21,12 @@ function LandingPage() {
           <h2 className="text-10xl sm:text-10xl font-bold mb-4">
             Your Fitness Journey Starts Here
           </h2>
-          <p className="text-lg sm:text-xl mb-10 max-w-2xl mx-auto">
+          <p className="text-lg font-bold sm:text-xl mb-10 max-w-2xl mx-auto">
             Track your workouts, monitor progress, take up challenges and reach your
             goals with GoGetFit.
             Make Every Workout Count.
             Fitness Tracking Made Effortless.
-            From Goals to Gains, We’ve Got You Covered
+            From Goals to Gains, We’ve Got You Covered!
           </p>
           <Link
             to="/signup"

@@ -7,10 +7,10 @@ function ProfilePage() {
         <h1 className="text-3xl font-bold text-purple-600 mb-6">Your Profile</h1>
 
         <div className="bg-white bg-opacity-30 backdrop-blur-md rounded-xl shadow-xl p-8 flex flex-col items-center max-w-md w-full">
-            <div className="flex flex-col items-center mb-6">
+            <div className="flex flex-col items-center mb-4">
                 <img src="src/assets/ProfilePicture.webp" 
                 alt="Profile" 
-                className="w-24 h-24 md:w-32 md:h-32 rounded-full object-cover shadow-lg mb-4"
+                className="w-12 h-12 md:w-24 md:h-24 rounded-full object-cover shadow-lg mb-4"
                 />
                 <h2 className="text-3xl font-semibold text-neonBlue mb-2">Natasha Sibanda</h2>
                 <p className="text-gray-300 mb-4">Email: natasha@example.com</p>

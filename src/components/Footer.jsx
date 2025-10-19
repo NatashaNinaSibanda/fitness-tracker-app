@@ -22,8 +22,8 @@ function Footer() {
       </div>
 
       <div>
-        <h3 className="text-xl font-bold mb-4">Follow Us</h3>
-        <div className="flex space-x-4">
+        <h3 className="text-xl text-center font-bold mb-4">Follow Us</h3>
+        <div className="flex justify-center space-x-6">
           <Link to="#" className="hover:underline"><FaFacebook /></Link>
           <Link to="#" className="hover:underline"><FaTwitter /></Link>
           <Link to="#" className="hover:underline"><FaInstagram /></Link>

@@ -1,3 +1,5 @@
+import './index.css';
+import './App.css'; 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -10,7 +12,7 @@ import WorkoutHistory from "./components/WorkoutHistory";
 import WorkoutLog from "./components/WorkoutLog";
 import ProgressChart from "./components/ProgressChart";
 import ProfilePage from "./Pages/ProfilePage"; 
-
+import ExercisesPage from "./Pages/ExercisesPage";
 
 
 function App() {
@@ -30,6 +32,7 @@ function App() {
             <Route path="/dashboard/history" element={<WorkoutHistory />} />
             <Route path="/dashboard/log" element={<WorkoutLog />} />
             <Route path="/profile" element={<ProfilePage />} /> 
+            <Route path="/exercises" element={<ExercisesPage />} />
           </Routes>
         </main>
         <Footer />
