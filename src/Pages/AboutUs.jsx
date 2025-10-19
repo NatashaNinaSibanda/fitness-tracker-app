@@ -1,6 +1,6 @@
 import React from "react"; 
 import Team from "../assets/Team.webp";
-import aboutimage from "../assets/aboutimage.jpg"; 
+import AboutImage from "../assets/AboutImage.jpg"; 
 
 function AboutUs() {
     return (
@@ -62,7 +62,7 @@ function AboutUs() {
 
             <div>
                 <img
-                    src={aboutimage}
+                    src={AboutImage}
                     alt="About GoGetFit"
                     className="rounded-xl shadow-lg object-cover w-full h-56 md:h-72 mt-6 md:mt-12"
                 />
