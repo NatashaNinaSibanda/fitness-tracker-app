@@ -1,6 +1,6 @@
 import React from "react"; 
 import Team from "../assets/Team.webp";
-import AboutImage from "../assets/AboutUs.jpg";
+import AboutImage from "../assets/AboutImage.jpg";
 
 function AboutUs() {
     return (
@@ -15,7 +15,7 @@ function AboutUs() {
                 </p>
             </div>
 
-            <div className="grid md;grid-cols-2 gap-12 items-center">
+            <div className="grid md:grid-cols-2 gap-12 items-center">
                 <div>
                     <h3 className="text-2xl font-bold mb-4 text-gray-900">
                         Ignite your fitness journey with GoGetFit. Empowering you to reach your Goals.
@@ -33,18 +33,39 @@ function AboutUs() {
                     </p>
                 </div>
 
-                <div className="grid grid-colos-2 gap-4">
+                <div className="grid grid-cols-1 gap-4">
                     <img 
-                    src={Team}
-                    alt="GoGetFit Team"
-                    className="rounded-xl shadow-lg object-cover w-full h-56 md-h-72"
-                     />
-                     <img 
-                     src={AboutUs}
-                     alt="About GoGetFit" 
-                     className="rounded-xl shadow-lg object-cover w-full h-56 md:h-72 mt-6 md:mt-12"
-                     />
-                </div> 
+                        src={Team}
+                        alt="GoGetFit Team"
+                        className="rounded-xl shadow-lg object-cover w-full h-56 md:h-72"
+                    />
+                </div>
+            </div>
+
+            <div className="mt-16 bg-gradient-to-r from-pink-100 to-red-100 rounded-xl shadow-lg p-10 text-center">
+                <h3 className="text-3xl font-bold text-red-600 mb-6">Our Vision</h3>
+
+                <p className="text-gray-700 leading-relaxed">
+                    At GoGetFit, our vision is to create a world where fitness is accessible to everyone, regardless of their background or experience level.
+                    We aim to break down barriers and provide the tools and support needed to help individuals achieve their fitness goals.
+                </p>
+            </div>
+
+            <div>
+                <h4 className="text-2xl text-center font-semibold mb-3 text-gray-900">Our Mission</h4>
+                <p className="text-gray-700 leading relaxed">
+                    To make fitness easy, engaging, fun and accessible for everyone.
+                    GoGetFit empowers users to set goals, track their progress and celebrate every milestone.
+                    We aim to turn fitness into a lifelong fun habit by proving the best app.
+                </p>
+            </div>
+
+            <div>
+                <img
+                    src={AboutImage}
+                    alt="About GoGetFit"
+                    className="rounded-xl shadow-lg object-cover w-full h-56 md:h-72 mt-6 md:mt-12"
+                />
             </div>
         </section>
     );

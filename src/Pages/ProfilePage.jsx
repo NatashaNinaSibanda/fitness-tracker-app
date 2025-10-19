@@ -2,14 +2,15 @@ import React from "react";
 
 function ProfilePage() {
     return (
-      <div className="bg-gray-900 min-h-screen p-6 flex-col items-center">
+      <div className="bg-transparent backdrop-blur-md rounded-xl shadow-xl p-8 flex flex-col items-center max-w-md w-full">
+
         <h1 className="text-3xl font-bold text-purple-600 mb-6">Your Profile</h1>
 
-        <div className="bg-gray-800 p-8 rounded-xl shadow-lg w-full max-w-md text-center border-t-4 border-neonBlue">
+        <div className="bg-white bg-opacity-30 backdrop-blur-md rounded-xl shadow-xl p-8 flex flex-col items-center max-w-md w-full">
             <div className="flex flex-col items-center mb-6">
                 <img src="src/assets/ProfilePicture.webp" 
                 alt="Profile" 
-                className="w-32 h-32 rounded-full mb-4 border-4 border-neonPurple" 
+                className="w-24 h-24 md:w-32 md:h-32 rounded-full object-cover shadow-lg mb-4"
                 />
                 <h2 className="text-3xl font-semibold text-neonBlue mb-2">Natasha Sibanda</h2>
                 <p className="text-gray-300 mb-4">Email: natasha@example.com</p>

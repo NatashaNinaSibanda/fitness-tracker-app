@@ -10,8 +10,9 @@ module.exports = {
         neonBlue: '#1FB6FF',
         neonGreen: '#13CE66',
         neonPurple: '#7E5BEF',
+        purple: '#800080',
       },
     },
   },
   plugins: [],
-};
+}; 
