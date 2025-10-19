@@ -2,7 +2,9 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from './components/Navbar';
 import LandingPage from './Pages/LandingPage';
 import AboutUs from "./Pages/AboutUs"; 
-import SignUpPage from './Pages/SignUpPage';
+import SignUpPage from "./Pages/SignUpPage";
+import LoginPage from "./Pages/LoginPage"; 
+import DashboardPage from "./Pages/DashboardPage";
 import Footer from './components/Footer';
 
 function App() {
@@ -15,6 +17,8 @@ function App() {
             <Route path="/" element={<LandingPage />} />
             <Route path="/about" element={<AboutUs />} />
             <Route path="/signup" element={<SignUpPage />} /> 
+            <Router path="/Login" element={<LoginPage />} /> 
+             <Route path="/dashboard" element={<DashboardPage />} />
           </Routes>
         </main>
         <Footer />

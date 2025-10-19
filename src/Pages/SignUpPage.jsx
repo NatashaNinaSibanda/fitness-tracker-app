@@ -1,10 +1,19 @@
 import React from "react";
+import AboutUs3 from "../assets/AboutUs3.jpg"; 
 
 function SignUpPage() {
     return (
-     <section className="min-h-screen flex flex-col items-center justify-center bg-gray-100 p-6">
-        <div className="bg-white p-8 rounded shadow-md w-full max-w-sm">
-            <h2 className="text-2xl font-bold text-center mb-6">Create Your Account</h2>
+     <section 
+      className="min-h-screen flex flex-col items-center justify-center bg-gray-100 p-6 bg-center relative brightness-150"
+      style={{ backgroundImage: `url(${AboutUs3})`,
+      backgroundSize: "contain",
+    }}
+      >
+    
+      <div className="absolute inset-0 bg-black/70 backdrop-blur-sm"></div>
+
+        <div className="relative z-10 bg-white/90 p-8 rounded-2xl shadow-md w-full max-w-sm">
+            <h2 className="text-3xl font-bold text-center mb-6 text-blue-500">Create Your Account</h2>
 
             <form className="space-y-6">
                 <div>

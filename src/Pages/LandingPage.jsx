@@ -11,7 +11,7 @@ function LandingPage() {
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
-        filter: "brightness(1.0)",
+        filter: "brightness(2.5)",
       }}
     >
       <div className="position:absolute inset-0 bg-white/90"></div>
@@ -29,7 +29,7 @@ function LandingPage() {
         </p>
         <Link
          to="/signup"
-         className="px-6 py-3 bg-green-500 text-white font-semibold rounded-lg hover:bg-green-600 transition"
+         className="px-6 py-3 bg-black-500 text-white font-semibold rounded-lg hover:bg-gray-600 transition"
  > 
          Get Started
         </Link>

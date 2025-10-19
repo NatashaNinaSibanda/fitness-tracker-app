@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
-    <nav className="flex justify-between items-center p-8 bg-white shadow-md">
+    <nav className="flex justify-between items-center p-8 bg-purple shadow-md">
       <h1 className="text-xl font-bold">GoGetFit</h1>
-      <div className="flex items-center space-10 space-x-6 space-x-12">
+      <div className="flex items-center space-10 space-x-6 space-x-18">
         <Link to="/" className="text-black hover:underline">
           Home
         </Link>
